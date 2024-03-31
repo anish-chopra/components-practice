@@ -1,3 +1,5 @@
+import { createRoot } from 'react-dom/client'
+
 const planets = [
   {
     id: '1',
@@ -86,7 +88,7 @@ function Planet() {
               </ul>
           </div> 
   )
-}
+};
 
 // 2: Create a container component that iterates over the planets array 
 //    and renders a 'Planet' component for each object in the array 
@@ -94,13 +96,13 @@ function Planet() {
 function PlanetContainer() {
   return (
           <div className="container">
-              
+            <h1>Hello</h1>   
           </div> 
   )
-}
+};
 
 
 // 3: Render the container component to the DOM
 
 const root = createRoot(document.getElementById('root'));
-root.render(<PlanetContainer />)
+root.render(<PlanetContainer />);
